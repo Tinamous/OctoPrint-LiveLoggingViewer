@@ -32,7 +32,7 @@ class LiveloggingviewerPlugin(octoprint.plugin.StartupPlugin,
 			self._logger.info("Using log name: '{0}' at level {1}".format(logName, level))
 			logger = logging.getLogger(logName)
 			logger.addHandler(handler)
-			self._logger.info("Live Logging Viewer Attached for log: '{0}'".format(logName))
+			self._logger.info("Live Logging Viewer Attached for log: '{0}' at level {1}".format(logName, level))
 
 	##~~ SettingsPlugin mixin
 
