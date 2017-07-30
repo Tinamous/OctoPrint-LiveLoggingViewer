@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_liveloggingviewer/templates *
+recursive-include octoprint_liveloggingviewer/translations *
+recursive-include octoprint_liveloggingviewer/static *

@@ -1,0 +1,22 @@
+<div class="row-fluid" data-bind="visible: loginStateViewModel.isUser">
+    <h3>Live Logging</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width:50px">Level</th>
+                <th style="width:50px">File</th>
+                <th style="width:50px">Line</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: logMessages">
+            <tr>
+                <td data-bind="text:levelname"></td>
+                <td data-bind="text:filename"></td>
+                <td data-bind="text:lineno"></td>
+                <td data-bind="text:message"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
